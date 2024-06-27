@@ -1,0 +1,204 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 51px;
+    background-color: cornsilk;
+    border-bottom: 1px solid brown;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+img{
+    height: 50px;
+    width: 20%;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+    font-size: large;
+    padding: 15px;
+}
+
+.nav-link:hover{
+    background-color: brown;
+    color: cornsilk;
+}
+
+form{
+    text-align: center;
+    margin-top: 70px;
+}
+
+label{
+    font-size: large;
+}
+
+input{
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: gold;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+#submit{
+    width: 200px;
+    writing-mode: horizontal-tb;
+}
+
+button:active,#submit:active{
+    color: gold;
+    background-color: black;
+}
+
+section{
+    width: 60%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 50px auto;
+    padding-top: 60px;
+}
+
+.features{
+    text-align: left;
+}
+
+i, .heading{
+    font-size: 30px;
+}
+
+.features p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video{
+    text-align: center;
+}
+
+iframe{
+    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.price-tag{
+    border: 2px solid brown;
+    border-radius: 4px;
+    width: 300px;
+    padding: 5px;
+    margin: 2px
+}
+
+.price-tag header{
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.price-tag button{
+    bottom: 0;
+    width: 100%;
+}
+
+.tag-h1{
+    font-weight: bolder;
+}
+
+footer{
+    height: 40px;
+    width: 80%;
+    background-color: cornsilk;
+    margin: auto;
+    border: 1px solid brown;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px 0;
+}
+
+footer a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: brown;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer p{
+    margin-right: 10px;
+    color: brown;
+    opacity: 0.8;
+    margin-top: 2px;
+    text-align: right;
+}
+
+@media(max-width: 950px){
+    #pricing{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px){
+    #header{
+        height: -moz-fit-content;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    h1{
+        margin-top: 220px;
+    }
+    .price-tag{
+        width: 98%;
+    }
+    footer{
+        height: -moz-fit-content;
+        height: fit-content;
+        text-align: center;
+    }
+    footer p{
+        text-align: center;
+        margin-bottom: 1px;
+    }
+}
